@@ -1,7 +1,3 @@
-Sure! Here's a README for your GitHub project using Markdown syntax with headings and appropriate command formatting:
-
----
-
 # Database Design Project 3
 
 This project demonstrates a CRUD application that integrates Redis to enhance performance for user and portfolio management, transactions, tenant interaction logs, and financial report summaries.

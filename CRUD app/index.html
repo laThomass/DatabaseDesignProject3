@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Real Estate User Management System</h1>
+
+        <!-- User creation form -->
+        <div class="form-container">
+            <form id="userForm">
+                <input type="text" id="userFirstName" placeholder="First Name" required>
+                <input type="text" id="userLastName" placeholder="Last Name" required>
+                <input type="email" id="userEmail" placeholder="Email" required>
+                <button type="button" onclick="addUser()">Add User</button>
+            </form>
+        </div>
+
+        <!-- Display area for user list -->
+        <div id="usersList" class="users-list"></div>
+
+        <!-- Portfolio details section, hidden by default -->
+        <div id="portfolioDetails" style="display:none;">
+            <h2>Portfolio Details</h2>
+            <div id="portfolioName"></div>
+            <div id="portfolioValue"></div>
+            <div id="portfolioStatus"></div>
+            <div id="portfolioProperties"></div>
+        </div>
+
+        <div id="editPortfolio" style="display:none;">
+            <button onclick="editPortfolio()">Edit Portfolio</button>
+        </div>
+
+        <!-- Portfolio Edit Form, hidden by default -->
+        <div id="editPortfolioForm" style="display:none;">
+            <input type="text" id="editName" placeholder="Portfolio Name">
+            <input type="text" id="editValue" placeholder="Total Value">
+            <label><input type="checkbox" id="editStatus"> Active</label>
+            <button id="saveChangesButton" onclick="savePortfolioEdit()">Save Changes</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
